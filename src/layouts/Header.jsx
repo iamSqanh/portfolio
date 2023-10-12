@@ -1,106 +1,85 @@
+import { Typography } from '@material-tailwind/react';
 import { useState } from 'react';
-import {
-    Drawer,
-    Button,
-    Typography,
-    IconButton,
-} from '@material-tailwind/react';
 
-import { AiOutlineHome, AiOutlineMenu } from 'react-icons/ai';
+import {
+    AiOutlineContacts,
+    AiOutlineHome,
+    AiOutlineMenu,
+} from 'react-icons/ai';
+import { BsCardImage } from 'react-icons/bs';
+import { LuServer } from 'react-icons/lu';
+import { PiNote } from 'react-icons/pi';
 import { RxPerson } from 'react-icons/rx';
+import ModalHeader from '../components/ModalHeader';
 
 function Header() {
-    const [openBottom, setOpenBottom] = useState(false);
-    const openDrawerBottom = () => setOpenBottom(true);
-    const closeDrawerBottom = () => setOpenBottom(false);
+    const [open, setOpen] = useState(false);
+
+    const openDrawer = () => setOpen(true);
+    const closeDrawer = () => setOpen(false);
 
     const dataHeader = [
         {
             title: 'Home',
-            icon: <AiOutlineHome />,
+            icon: <AiOutlineHome className="w-5 h-5" />,
         },
         {
             title: 'About',
-            icon: <RxPerson />,
+            icon: <RxPerson className="w-5 h-5" />,
         },
         {
             title: 'Skills',
-            icon: <RxPerson />,
+            icon: <PiNote className="w-5 h-5" />,
         },
         {
             title: 'Services',
-            icon: <RxPerson />,
+            icon: <LuServer className="w-5 h-5" />,
         },
         {
             title: 'Portfolio',
-            icon: <RxPerson />,
+            icon: <BsCardImage className="w-5 h-5" />,
         },
         {
             title: 'Contact',
-            icon: <RxPerson />,
+            icon: <AiOutlineContacts className="w-5 h-5" />,
         },
     ];
 
-    const Mobile = () => (
-        <Drawer
-            placement="bottom"
-            open={openBottom}
-            onClose={closeDrawerBottom}
-            className="p-4"
-        >
-            <div className="mb-6 flex items-center justify-between">
-                <Typography variant="h5" color="blue-gray">
-                    Drawer on Bottom
-                </Typography>
-                <IconButton
-                    variant="text"
-                    color="blue-gray"
-                    onClick={closeDrawerBottom}
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={2}
-                        stroke="currentColor"
-                        className="h-5 w-5"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M6 18L18 6M6 6l12 12"
-                        />
-                    </svg>
-                </IconButton>
-            </div>
-        </Drawer>
-    );
-
     return (
         <div className="max-w-[1440px] h-16 px-4 mx-auto my-0 flex gap-4 items-center justify-between">
-            <div>Anh</div>
+            <div className="flex items-center justify-between gap-2">
+                <img src="https://flowbite.com/images/logo.svg" alt="" />
+                <Typography
+                    variant="h5"
+                    color="blue-gray"
+                    className="text-center"
+                >
+                    ANH
+                </Typography>
+            </div>
             <div>
-                <ul className="hidden gap-8 items-center justify-between lg:flex">
+                <ul className="hidden gap-8 items-center justify-between md:flex">
                     {dataHeader.map((item, index) => (
                         <li
                             key={index}
                             className="flex items-center justify-between font-medium"
                         >
-                            {/* <span>{item.icon}</span> */}
                             <span className="cursor-pointer text-gray-600 hover:text-red-500 hover:underline">
                                 {item.title}
                             </span>
                         </li>
                     ))}
                 </ul>
-                <div className="lg:hidden">
-                    <AiOutlineMenu
-                        className="w-6 h-6 cursor-pointer"
-                        onClick={openDrawerBottom}
-                    />
+                <div className="md:hidden">
+                    <span
+                        onClick={openDrawer}
+                        className="block p-2 cursor-pointer"
+                    >
+                        <AiOutlineMenu className="w-6 h-6 cursor-pointer" />
+                    </span>
                 </div>
-                {/* <Mobile /> */}
             </div>
+            <ModalHeader data={dataHeader} open={open} onClose={closeDrawer} />
         </div>
     );
 }
