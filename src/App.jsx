@@ -3,7 +3,7 @@ import Header from './layouts/Header';
 
 function App() {
     return (
-        <div className="w-[100%] min-h-[200vh]">
+        <div className="w-[100%] min-h-[200vh] bg-[#22262E]">
             <Header />
             <main className="mt-8">
                 <Home />

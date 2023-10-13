@@ -49,11 +49,7 @@ function Header() {
         <div className="max-w-[1440px] h-16 px-4 mx-auto my-0 flex gap-4 items-center justify-between">
             <div className="flex items-center justify-between gap-2">
                 <img src="https://flowbite.com/images/logo.svg" alt="" />
-                <Typography
-                    variant="h5"
-                    color="blue-gray"
-                    className="text-center"
-                >
+                <Typography variant="h5" color="white" className="text-center">
                     ANH
                 </Typography>
             </div>
@@ -64,7 +60,7 @@ function Header() {
                             key={index}
                             className="flex items-center justify-between font-medium"
                         >
-                            <span className="cursor-pointer text-gray-600 hover:text-red-500 hover:underline">
+                            <span className="cursor-pointer text-white hover:text-red-500 hover:underline">
                                 {item.title}
                             </span>
                         </li>
@@ -75,7 +71,7 @@ function Header() {
                         onClick={openDrawer}
                         className="block p-2 cursor-pointer"
                     >
-                        <AiOutlineMenu className="w-6 h-6 cursor-pointer" />
+                        <AiOutlineMenu className="w-6 h-6 cursor-pointer text-white" />
                     </span>
                 </div>
             </div>

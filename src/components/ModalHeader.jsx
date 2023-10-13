@@ -7,7 +7,7 @@ function ModalHeader({ data, open, onClose }) {
             size={240}
             open={open}
             onClose={onClose}
-            className="p-4 rounded-xl flex flex-col justify-between"
+            className="p-4 rounded-xl flex flex-col justify-between bg-[#22262E]"
         >
             <ul className="grid grid-cols-3 gap-4 mt-6">
                 {data.map((item, index) => (
@@ -15,10 +15,10 @@ function ModalHeader({ data, open, onClose }) {
                         key={index}
                         className="flex items-center justify-center flex-col gap-2 col-span-1"
                     >
-                        <p className="grid place-items-center text-gray-600">
+                        <p className="grid place-items-center text-white">
                             {item.icon}
                         </p>
-                        <p className="text-gray-600">{item.title}</p>
+                        <p className="text-white">{item.title}</p>
                     </li>
                 ))}
             </ul>
@@ -27,7 +27,7 @@ function ModalHeader({ data, open, onClose }) {
                     <img src="https://flowbite.com/images/logo.svg" alt="" />
                     <Typography
                         variant="h5"
-                        color="blue-gray"
+                        color="white"
                         className="text-center"
                     >
                         Anh
