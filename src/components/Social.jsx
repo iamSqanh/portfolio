@@ -27,7 +27,7 @@ function Social() {
                         key={index}
                         href=""
                         target="_blank"
-                        className="hover:scale-150 "
+                        className="hover:scale-150 transition-transform duration-300"
                     >
                         <span className="text-gray-300 hover:text-blue-800">
                             {item.icon}

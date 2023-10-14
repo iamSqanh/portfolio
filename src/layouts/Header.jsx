@@ -47,8 +47,12 @@ function Header() {
 
     return (
         <div className="max-w-[1440px] h-16 px-4 mx-auto my-0 flex gap-4 items-center justify-between">
-            <div className="flex items-center justify-between gap-2">
-                <img src="https://flowbite.com/images/logo.svg" alt="" />
+            <div className="flex items-center justify-between gap-4">
+                <img
+                    src="https://flowbite.com/images/logo.svg"
+                    alt=""
+                    className="w-12"
+                />
                 <Typography variant="h5" color="white" className="text-center">
                     ANH
                 </Typography>
