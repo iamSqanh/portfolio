@@ -1,4 +1,3 @@
-import React from 'react';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { AiFillCheckCircle } from 'react-icons/ai';
 
@@ -15,7 +14,7 @@ const About = () => {
 
     const aboutMe = [
         {
-            title: `My name is Sang and I work as a Front End Developer. Let me know if you need any assistance in that area.`,
+            title: `My name is Anh and I work as a Front End Developer. Let me know if you need any assistance in that area.`,
         },
         {
             title: `First, learn the rules then study the literature.`,
@@ -59,7 +58,7 @@ const About = () => {
     ];
 
     return (
-        <div className="pt-[50px] mb-[100px]">
+        <div className="pt-[50px] mb-6 lg:mb-[100px]">
             <TitlePage
                 Icon={<BsFillPersonFill />}
                 title={title}

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const TitlePage = ({ Icon, title, text, textColor }) => {
     return (
         <div>
@@ -10,7 +8,7 @@ const TitlePage = ({ Icon, title, text, textColor }) => {
                     <span>{title}</span>
                 </p>
             </div>
-            <h2 className="text-[32px] font-medium mb-2 text-white">
+            <h2 className="text-2xl lg:text-[32px] font-medium mb-2 text-white">
                 {text} <span className="text-blue-500">{textColor}</span>
             </h2>
         </div>
