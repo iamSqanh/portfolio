@@ -44,7 +44,7 @@ function Banner() {
                                     MY NAME IS <span>QUOC ANH</span>
                                 </h2>
                             </div>
-                            <h4 className="my-10 text-3xl italic lg:text-[46px] font-light lg:my-14 text-white">
+                            <h4 className="my-10 text-3xl italic lg:text-[46px] font-light lg:my-14 text-white text-italic">
                                 Front End Developer
                             </h4>
                             <Button

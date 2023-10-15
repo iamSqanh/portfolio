@@ -1,8 +1,7 @@
-import React from 'react';
 import { BsFillBriefcaseFill } from 'react-icons/bs';
 
-import TitlePage from '../components/TitlePage';
 import CardProduct from '../components/CardProduct';
+import TitlePage from '../components/TitlePage';
 
 const Project = () => {
     const data = {
