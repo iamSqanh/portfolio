@@ -1,6 +1,7 @@
 import About from './About';
 import Banner from './Banner';
 import Contact from './Contact';
+import Project from './Project';
 import Resume from './Resume';
 import Skills from './Skills';
 
@@ -11,6 +12,7 @@ function Home() {
             <About />
             <Resume />
             <Skills />
+            <Project />
             <Contact />
         </div>
     );

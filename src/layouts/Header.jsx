@@ -2,13 +2,13 @@ import { Typography } from '@material-tailwind/react';
 import { useState } from 'react';
 
 import {
-    AiOutlineContacts,
+    AiFillSlackCircle,
     AiOutlineHome,
+    AiOutlineMail,
     AiOutlineMenu,
 } from 'react-icons/ai';
-import { BsCardImage } from 'react-icons/bs';
-import { LuServer } from 'react-icons/lu';
-import { PiNote } from 'react-icons/pi';
+import { BiSolidShoppingBags } from 'react-icons/bi';
+import { BsFillBriefcaseFill } from 'react-icons/bs';
 import { RxPerson } from 'react-icons/rx';
 import ModalHeader from '../components/ModalHeader';
 
@@ -28,20 +28,20 @@ function Header() {
             icon: <RxPerson className="w-5 h-5" />,
         },
         {
-            title: 'Skills',
-            icon: <PiNote className="w-5 h-5" />,
+            title: 'Resume',
+            icon: <BiSolidShoppingBags className="w-5 h-5" />,
         },
         {
-            title: 'Services',
-            icon: <LuServer className="w-5 h-5" />,
+            title: 'Skills',
+            icon: <AiFillSlackCircle className="w-5 h-5" />,
         },
         {
             title: 'Portfolio',
-            icon: <BsCardImage className="w-5 h-5" />,
+            icon: <BsFillBriefcaseFill className="w-5 h-5" />,
         },
         {
             title: 'Contact',
-            icon: <AiOutlineContacts className="w-5 h-5" />,
+            icon: <AiOutlineMail className="w-5 h-5" />,
         },
     ];
 
@@ -64,7 +64,7 @@ function Header() {
                             key={index}
                             className="flex items-center justify-between font-medium"
                         >
-                            <span className="cursor-pointer text-white hover:text-red-500 hover:underline">
+                            <span className="cursor-pointer text-white hover:scale-110 transition-transform duration-300 hover:text-blue-400 hover:underline">
                                 {item.title}
                             </span>
                         </li>
