@@ -93,7 +93,7 @@ function Banner() {
                             </h4>
                             <a
                                 download="CV.pdf"
-                                href="assets/CV.pdf"
+                                href="src/assets/CV.pdf"
                                 className="w-full flex items-center justify-center gap-3 px-6 py-4 text-white rounded-full font-medium lg:px-10 lg:py-4 lg:translate-x-24 lg:text-base lg:w-auto bg-blue-500"
                             >
                                 <span className="tracking-wide">
