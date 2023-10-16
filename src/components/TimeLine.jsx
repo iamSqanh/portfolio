@@ -20,7 +20,7 @@ const TimeLine = () => {
                         <TimelineIcon className="p-0">
                             <Avatar
                                 size="sm"
-                                src="https://res.cloudinary.com/dclafzgo9/image/upload/v1697270751/portfolio_Anh/logICTU_uwkpyu.png"
+                                src="https://res.cloudinary.com/dclafzgo9/image/upload/v1697427022/portfolio_Anh/ictu2_yoj624.jpg"
                                 alt="user 1"
                                 withBorder
                             />
@@ -39,7 +39,7 @@ const TimeLine = () => {
                         >
                             Graduated
                         </Typography>
-                        <Typography className="text-gray-500 font-normal mt-3">
+                        <Typography className="text-gray-300 font-normal mt-3">
                             University of Information and Communication
                             Technology
                         </Typography>
@@ -51,8 +51,8 @@ const TimeLine = () => {
                         <TimelineIcon className="p-0">
                             <Avatar
                                 size="sm"
-                                src="https://res.cloudinary.com/dclafzgo9/image/upload/v1697270752/portfolio_Anh/Ocean_tech_amjnlu.jpg"
-                                alt="user 1"
+                                src="https://res.cloudinary.com/dclafzgo9/image/upload/v1697427022/portfolio_Anh/oc2_yesnxi.png"
+                                alt="OC"
                                 withBorder
                             />
                         </TimelineIcon>
@@ -70,7 +70,7 @@ const TimeLine = () => {
                         >
                             Internship
                         </Typography>
-                        <Typography className="text-gray-500 font-normal mt-3">
+                        <Typography className="text-gray-300 font-normal mt-3">
                             Ocean Technology Trading Investment Co ., Ltd
                         </Typography>
                     </TimelineBody>

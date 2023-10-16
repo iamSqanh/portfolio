@@ -1,11 +1,11 @@
-import About from './About';
 import Banner from './Banner';
+import About from './About';
 import Contact from './Contact';
 import Project from './Project';
 import Resume from './Resume';
 import Skills from './Skills';
 
-function Home() {
+const Home = () => {
     return (
         <div className="max-w-[1440px] px-4 mx-auto my-0">
             <Banner />
@@ -16,6 +16,6 @@ function Home() {
             <Contact />
         </div>
     );
-}
+};
 
 export default Home;

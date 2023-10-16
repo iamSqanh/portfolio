@@ -27,12 +27,12 @@ function Banner() {
             <div className="lg:flex justify-center">
                 <div className="lg:w-[40%]">
                     <img
-                        src="https://sangnguyen201.github.io/portfolio/img/SANG_Vjpro.png/SANG_Vjpro.png"
+                        src="https://res.cloudinary.com/dclafzgo9/image/upload/v1697445571/portfolio_Anh/avta1_qmzs0s.png"
                         alt=""
                         className="lg:w-full"
                     />
                 </div>
-                <div className="w-full lg:w-[40%] flex items-center">
+                <div className="w-full lg:w-[40%] flex items-center mt-4">
                     <div className="w-full h-unset lg:h-[500px] flex flex-col justify-between ">
                         <div className="flex flex-col items-center justify-center lg:items-start relative">
                             <h1 className="font-bold text-4xl text-white uppercase lg:text-[42px] lg:mb-4">
@@ -60,7 +60,7 @@ function Banner() {
                                     <AiOutlineArrowDown className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white h-5 w-5" />
                                     <img
                                         className="w-[100px] animate-spin-slow hover:scale-110"
-                                        src="https://sangnguyen201.github.io/portfolio/img/round-text.png"
+                                        src="https://res.cloudinary.com/dclafzgo9/image/upload/v1697445704/portfolio_Anh/round-text_pdwypp.png"
                                         alt=""
                                     />
                                 </a>

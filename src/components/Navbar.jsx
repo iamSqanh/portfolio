@@ -1,24 +1,20 @@
 import { Tooltip } from '@material-tailwind/react';
 
-import {
-    AiFillSlackCircle,
-    AiOutlineHome,
-    AiOutlineMail,
-} from 'react-icons/ai';
+import { AiFillFileWord, AiFillHome, AiFillSlackCircle } from 'react-icons/ai';
 import { BiSolidShoppingBags } from 'react-icons/bi';
-import { BsCardImage } from 'react-icons/bs';
-import { RxPerson } from 'react-icons/rx';
+import { BsFillPersonFill } from 'react-icons/bs';
+import { IoIosMail } from 'react-icons/io';
 
 const Navbar = () => {
     const navbar = [
         {
             name: 'Home',
-            icon: <AiOutlineHome />,
+            icon: <AiFillHome />,
             path: '',
         },
         {
             name: 'About',
-            icon: <RxPerson />,
+            icon: <BsFillPersonFill />,
             path: '',
         },
         {
@@ -33,12 +29,12 @@ const Navbar = () => {
         },
         {
             name: 'Portfolio',
-            icon: <BsCardImage />,
+            icon: <AiFillFileWord />,
             path: '',
         },
         {
             name: 'Contact',
-            icon: <AiOutlineMail />,
+            icon: <IoIosMail />,
             path: '',
         },
     ];

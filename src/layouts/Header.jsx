@@ -2,14 +2,16 @@ import { Typography } from '@material-tailwind/react';
 import { useState } from 'react';
 
 import {
+    AiFillFileWord,
+    AiFillHome,
     AiFillSlackCircle,
-    AiOutlineHome,
-    AiOutlineMail,
     AiOutlineMenu,
 } from 'react-icons/ai';
+
+import { BsFillPersonFill } from 'react-icons/bs';
+
 import { BiSolidShoppingBags } from 'react-icons/bi';
-import { BsFillBriefcaseFill } from 'react-icons/bs';
-import { RxPerson } from 'react-icons/rx';
+import { IoIosMail } from 'react-icons/io';
 import ModalHeader from '../components/ModalHeader';
 
 function Header() {
@@ -21,11 +23,11 @@ function Header() {
     const dataHeader = [
         {
             title: 'Home',
-            icon: <AiOutlineHome className="w-5 h-5" />,
+            icon: <AiFillHome className="w-5 h-5" />,
         },
         {
             title: 'About',
-            icon: <RxPerson className="w-5 h-5" />,
+            icon: <BsFillPersonFill className="w-5 h-5" />,
         },
         {
             title: 'Resume',
@@ -37,11 +39,11 @@ function Header() {
         },
         {
             title: 'Portfolio',
-            icon: <BsFillBriefcaseFill className="w-5 h-5" />,
+            icon: <AiFillFileWord className="w-5 h-5" />,
         },
         {
             title: 'Contact',
-            icon: <AiOutlineMail className="w-5 h-5" />,
+            icon: <IoIosMail className="w-5 h-5" />,
         },
     ];
 

@@ -1,4 +1,6 @@
 import { AiOutlineMail, AiOutlineShareAlt } from 'react-icons/ai';
+import { IoIosMail } from 'react-icons/io';
+
 // import { IoLocationOutline } from 'react-icons/io';
 import { CiLocationOn } from 'react-icons/ci';
 import { BsTelephone } from 'react-icons/bs';
@@ -41,7 +43,7 @@ const Contact = () => {
     return (
         <div className="pt-[50px] mb-10 lg:mb-[100px]">
             <TitlePage
-                Icon={<AiOutlineMail />}
+                Icon={<IoIosMail />}
                 title={title}
                 text={text}
                 textColor={textColor}
