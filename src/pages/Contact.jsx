@@ -41,7 +41,7 @@ const Contact = () => {
     const { title, text, textColor } = Contact;
 
     return (
-        <div className="pt-[50px] mb-10 lg:mb-[100px]">
+        <div id="contact" className="pt-[50px] mb-10 lg:mb-[100px]">
             <TitlePage
                 Icon={<IoIosMail />}
                 title={title}

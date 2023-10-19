@@ -7,7 +7,7 @@ import Skills from './Skills';
 
 const Home = () => {
     return (
-        <div className="max-w-[1440px] px-4 mx-auto my-0">
+        <div id="banner" className="max-w-[1440px] px-4 mx-auto my-0">
             <Banner />
             <About />
             <Resume />

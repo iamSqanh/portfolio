@@ -4,38 +4,39 @@ import { AiFillFileWord, AiFillHome, AiFillSlackCircle } from 'react-icons/ai';
 import { BiSolidShoppingBags } from 'react-icons/bi';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { IoIosMail } from 'react-icons/io';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const navbar = [
         {
             name: 'Home',
             icon: <AiFillHome />,
-            path: '',
+            path: 'banner',
         },
         {
             name: 'About',
             icon: <BsFillPersonFill />,
-            path: '',
+            path: 'about',
         },
         {
             name: 'Resume',
             icon: <BiSolidShoppingBags />,
-            path: '',
+            path: 'resume',
         },
         {
             name: 'Skills',
             icon: <AiFillSlackCircle />,
-            path: '',
+            path: 'skills',
         },
         {
             name: 'Portfolio',
             icon: <AiFillFileWord />,
-            path: '',
+            path: 'portfolio',
         },
         {
             name: 'Contact',
             icon: <IoIosMail />,
-            path: '',
+            path: 'contact',
         },
     ];
 
@@ -49,9 +50,17 @@ const Navbar = () => {
                         content={item.name}
                         className="text-blue-500 bg-[#808080] text-white px-4 rounded-full"
                     >
-                        <p className="text-xl hover:text-blue-500 px-2 hover:scale-125 transition-transform duration-300">
+                        <Link
+                            activeClass=""
+                            to={item.path}
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            offset={-100}
+                            className="text-xl hover:text-blue-500 px-2 hover:scale-125 transition-transform duration-300"
+                        >
                             {item.icon}
-                        </p>
+                        </Link>
                     </Tooltip>
                 ))}
             </div>

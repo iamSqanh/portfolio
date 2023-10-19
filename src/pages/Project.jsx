@@ -89,7 +89,7 @@ const Project = () => {
     const { title, text, textColor } = data;
 
     return (
-        <div className="pt-[50px] mb-6 lg:mb-[100px]">
+        <div id="portfolio" className="pt-[50px] mb-6 lg:mb-[100px]">
             <TitlePage
                 Icon={<AiFillFileWord />}
                 title={title}

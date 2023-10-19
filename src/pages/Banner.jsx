@@ -61,7 +61,7 @@ function Banner() {
     ];
 
     return (
-        <div className="relative h-unset lg:h-[80vh] ">
+        <div id="banner" className="relative h-unset lg:h-[80vh] ">
             <div className="absolute left-0 top-1/2 transform translate-y-[-50%] hidden lg:block">
                 <Social />
             </div>
@@ -92,8 +92,8 @@ function Banner() {
                                 Front End Developer
                             </h4>
                             <a
-                                download="CV.pdf"
-                                href="src/assets/CV.pdf"
+                                download=""
+                                href="https://www.topcv.vn/xem-cv/BgZbAAIHVFNWBFZXBVpaUAJbXAMLD15UX1JWAAfc34"
                                 className="w-full flex items-center justify-center gap-3 px-6 py-4 text-white rounded-full font-medium lg:px-10 lg:py-4 lg:translate-x-24 lg:text-base lg:w-auto bg-blue-500"
                             >
                                 <span className="tracking-wide">

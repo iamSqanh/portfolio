@@ -13,7 +13,7 @@ const Resume = () => {
     const { title, text, textColor } = resume;
 
     return (
-        <div className="pt-[50px] mb-6 lg:mb-[100px]">
+        <div id="resume" className="pt-[50px] mb-6 lg:mb-[100px]">
             <TitlePage
                 Icon={<BiSolidShoppingBags />}
                 text={text}

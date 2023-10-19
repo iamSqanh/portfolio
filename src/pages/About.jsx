@@ -58,7 +58,7 @@ const About = () => {
     ];
 
     return (
-        <div className="pt-[50px] mb-6 lg:mb-[100px]">
+        <div id="about" className="pt-[50px] mb-6 lg:mb-[100px]">
             <TitlePage
                 Icon={<BsFillPersonFill />}
                 title={title}

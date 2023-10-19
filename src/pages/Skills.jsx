@@ -79,7 +79,10 @@ const Skills = () => {
     ];
 
     return (
-        <div className="pt-[50px] mb-6 lg:mb-[100px] bg-[#22262E] py-7">
+        <div
+            id="skills"
+            className="pt-[50px] mb-6 lg:mb-[100px] bg-[#22262E] py-7"
+        >
             <TitlePage
                 Icon={<AiFillSlackCircle />}
                 title={title}

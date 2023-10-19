@@ -1,4 +1,5 @@
 import { Drawer, IconButton, Typography } from '@material-tailwind/react';
+import { Link } from 'react-scroll';
 
 function ModalHeader({ data, open, onClose }) {
     return (
@@ -11,15 +12,22 @@ function ModalHeader({ data, open, onClose }) {
         >
             <ul className="grid grid-cols-3 gap-4 mt-6">
                 {data.map((item, index) => (
-                    <li
+                    <Link
                         key={index}
+                        activeClass="active"
+                        to={item.path}
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        offset={-100}
                         className="flex items-center justify-center flex-col gap-2 col-span-1"
+                        onClick={onClose}
                     >
                         <p className="grid place-items-center text-white">
                             {item.icon}
                         </p>
                         <p className="text-white">{item.title}</p>
-                    </li>
+                    </Link>
                 ))}
             </ul>
             <div className="flex items-center justify-between">

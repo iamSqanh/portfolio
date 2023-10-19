@@ -5,15 +5,15 @@ import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 function Social() {
     const iconSocial = [
         {
-            path: '',
+            path: 'https://github.com/iamSqanh ',
             icon: <AiOutlineGithub className=" h-5 w-5" />,
         },
         {
-            path: '',
+            path: 'https://www.facebook.com/samquocanh1',
             icon: <FaFacebookF className=" h-5 w-5" />,
         },
         {
-            path: '',
+            path: '#',
             icon: <FaLinkedinIn className=" h-5 w-5" />,
         },
     ];
@@ -25,8 +25,7 @@ function Social() {
                 {iconSocial.map((item, index) => (
                     <a
                         key={index}
-                        href=""
-                        target="_blank"
+                        href={item.path}
                         className="hover:scale-150 transition-transform duration-300"
                     >
                         <span className="text-gray-300 hover:text-blue-800">
