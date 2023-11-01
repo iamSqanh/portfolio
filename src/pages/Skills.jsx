@@ -1,4 +1,3 @@
-import React from 'react';
 import { AiFillSlackCircle } from 'react-icons/ai';
 
 import TitlePage from '../components/TitlePage';

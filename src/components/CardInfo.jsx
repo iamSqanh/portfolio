@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const CardInfo = ({ Icon, title, des }) => {
     return (
@@ -12,6 +12,12 @@ const CardInfo = ({ Icon, title, des }) => {
             </div>
         </div>
     );
+};
+
+CardInfo.propTypes = {
+    Icon: PropTypes.object.isRequired,
+    title: PropTypes.string,
+    des: PropTypes.string,
 };
 
 export default CardInfo;

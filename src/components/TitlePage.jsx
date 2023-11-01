@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const TitlePage = ({ Icon, title, text, textColor }) => {
     return (
         <div>
@@ -13,6 +15,13 @@ const TitlePage = ({ Icon, title, text, textColor }) => {
             </h2>
         </div>
     );
+};
+
+TitlePage.propTypes = {
+    Icon: PropTypes.object,
+    title: PropTypes.string,
+    text: PropTypes.string,
+    textColor: PropTypes.string,
 };
 
 export default TitlePage;

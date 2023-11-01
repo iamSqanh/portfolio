@@ -1,5 +1,6 @@
 import { Drawer, IconButton, Typography } from '@material-tailwind/react';
 import { Link } from 'react-scroll';
+import PropTypes from 'prop-types';
 
 function ModalHeader({ data, open, onClose }) {
     return (
@@ -61,5 +62,11 @@ function ModalHeader({ data, open, onClose }) {
         </Drawer>
     );
 }
+
+ModalHeader.propTypes = {
+    data: PropTypes.array.isRequired,
+    open: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired,
+};
 
 export default ModalHeader;

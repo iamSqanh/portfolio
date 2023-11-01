@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const CardProduct = ({ obj }) => {
     return (
@@ -26,6 +26,10 @@ const CardProduct = ({ obj }) => {
             </div>
         </div>
     );
+};
+
+CardProduct.propTypes = {
+    obj: PropTypes.object,
 };
 
 export default CardProduct;

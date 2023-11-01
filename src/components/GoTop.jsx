@@ -1,4 +1,3 @@
-import React from 'react';
 import { SlArrowUp } from 'react-icons/sl';
 import { animateScroll as scroll } from 'react-scroll';
 
